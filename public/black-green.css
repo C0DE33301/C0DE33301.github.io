@@ -1,0 +1,44 @@
+body {
+    background-color: #000000; /* Black background */
+    color: #00ff00; /* Neon green text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a digital look */
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #00ff00; /* Neon green button */
+    color: #000000; /* Black text */
+    border: 2px solid #00ff00; /* Neon green border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #00ff00; /* Neon green text on hover */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #00ff00; /* Neon green borders */
+    padding: 10px;
+    text-align: left;
+    background-color: rgba(0, 255, 0, 0.1); /* Light green background for table cells */
+}
+
+th {
+    background-color: rgba(0, 255, 0, 0.3); /* Darker light green for header */
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: rgba(0, 255, 0, 0.5); /* Darker green on hover */
+}

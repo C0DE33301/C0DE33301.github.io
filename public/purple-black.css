@@ -1,0 +1,44 @@
+body {
+    background-color: #000000; /* Black background */
+    color: #800080; /* Purple text */
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for a digital look */
+    text-align: center;
+    padding: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #800080; /* Purple button */
+    color: #ffffff; /* White text */
+    border: 2px solid #800080; /* Purple border */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #000000; /* Black background on hover */
+    color: #800080; /* Purple text on hover */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #800080; /* Purple borders */
+    padding: 10px;
+    text-align: left;
+    background-color: rgba(128, 0, 128, 0.1); /* Light purple background for table cells */
+}
+
+th {
+    background-color: rgba(128, 0, 128, 0.3); /* Darker light purple for header */
+}
+
+/* Hover effect for table rows */
+tbody tr:hover {
+    background-color: rgba(128, 0, 128, 0.5); /* Darker purple on hover */
+}

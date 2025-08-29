@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Switcher</title>
+    <link id="theme-stylesheet" rel="stylesheet" href="black-green.css"> <!-- Set initial theme -->
+</head>
+<body>
+    <div class="container">
+        <h1>Color Switcher</h1>
+        <button id="switch-theme">Switch Theme</button>
+        
+        <h2>Menu</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Item 1</td>
+                    <td>Description of Item 1</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Item 2</td>
+                    <td>Description of Item 2</td>
+                    <td>$15.00</td>
+                </tr>
+                <tr>
+                    <td>Item 3</td>
+                    <td>Description of Item 3</td>
+                    <td>$20.00</td>
+                </tr>
+                <tr>
+                    <td>Item 4</td>
+                    <td>Description of Item 4</td>
+                    <td>$25.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script>
+        const button = document.getElementById('switch-theme');
+        let currentTheme = 0; // 0: Black and Green, 1: Purple and Black
+
+        button.addEventListener('click', () => {
+            currentTheme = (currentTheme + 1) % 2; // Cycle through themes
+            const themes = ['black-green.css', 'purple-black.css'];
+            document.getElementById('theme-stylesheet').href = themes[currentTheme];
+        });
+    </script>
+</body>
+</html>
